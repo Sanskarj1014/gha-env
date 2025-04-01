@@ -9,8 +9,8 @@ env:
 jobs:  
   test:
     env:
-      MONGODB_CLUSTER_ADDRESS: cluster0.rgrxhys.mongodb.net
-      MONGODB_USERNAME: sanskardb
+      MONGODB_CLUSTER_ADDRESS: cluster1.dtbgdvm.mongodb.net
+      MONGODB_USERNAME: sanskarjain
       MONGODB_PASSWORD: Redhat@123
       PORT: 8080
     # environment: testing

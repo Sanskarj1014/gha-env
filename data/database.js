@@ -1,11 +1,17 @@
 import { MongoClient } from 'mongodb';
 
-const clusterAddress = process.env.MONGODB_CLUSTER_ADDRESS;
-const dbUser = process.env.MONGODB_USERNAME;
-const dbPassword = process.env.MONGODB_PASSWORD;
-const dbName = process.env.MONGODB_DB_NAME;
+// const clusterAddress = process.env.MONGODB_CLUSTER_ADDRESS;
+// const dbUser = process.env.MONGODB_USERNAME;
+// const dbPassword = process.env.MONGODB_PASSWORD;
+// const dbName = process.env.MONGODB_DB_NAME;
 
-const uri = `mongodb+srv://${dbUser}:${dbPassword}@${clusterAddress}/?retryWrites=true&w=majority&appName=Cluster0`;
+
+const clusterAddress = "cluster1.dtbgdvm.mongodb.net";
+const dbUser = "sanskarjain";
+const dbPassword = "Redhat@123";
+const dbName = "gha-demo";
+
+const uri = `mongodb+srv://${dbUser}:${dbPassword}@${clusterAddress}/?retryWrites=true&w=majority&appName=cluster1`;
 const client = new MongoClient(uri);
 
 console.log('Trying to connect to db');
